@@ -25,11 +25,12 @@ const LinkList = () => {
           
           const linksToRender = data.feed.links;
 
-          return (
-            linksToRender.map((link) => <Link key={link.id} link={link}/>)
+          return (        
+            <ul>
+              { linksToRender.map((link) => <li><Link key={link.id} link={link}/><br/></li> )}
+            </ul>
           )
         }}
-        
       </Query>
     )
 }
