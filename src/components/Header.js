@@ -15,6 +15,10 @@ class Header extends Component {
             <RouterLink to="/" className="ml1 no-underline black">
               new
             </RouterLink>
+            <div className="ml1">|</div>
+            <RouterLink to="/search" className="ml1 no-underline black">
+              search
+            </RouterLink>
             {authToken && (
             <div className='flex flex-fixed'>  
               <div className="ml1">|</div>
